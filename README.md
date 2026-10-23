@@ -38,7 +38,7 @@ Incident response lifecycle | NIST CSF 2.0 | MITRE ATT&CK mapping | SIEM analysi
 
 ## Author
 
-Yousif Alqunfuzi | [[LinkedIn]](https://www.linkedin.com/in/yousif-alqunfuzi/) | yousifalqunfuzi@gmail.com
+Yousif Alqunfuzi | [LinkedIn](https://www.linkedin.com/in/yousif-alqunfuzi) &nbsp;|&nbsp; | yousifalqunfuzi@gmail.com
 
 ## Disclaimer
 
