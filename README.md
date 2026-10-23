@@ -1,9 +1,7 @@
 # Example Energy IR: Incident Response Plan and Incident Investigations
 
-> Academic capstone-style cybersecurity project.
+> Academic cybersecurity project.
 > A NIST CSF 2.0-aligned **Cyber Incident Response Plan (CIRP)** for a fictional critical-infrastructure energy provider, plus **two hands-on incident investigations** performed in a simulated enterprise network using Wazuh, Suricata, and Velociraptor.
-
-![Type](https://img.shields.io/badge/type-DFIR%20portfolio-blue) ![Framework](https://img.shields.io/badge/framework-NIST%20CSF%202.0-green) ![ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red) ![TLP](https://img.shields.io/badge/TLP-CLEAR-lightgrey)
 
 ## Overview
 
@@ -37,16 +35,13 @@ Example Energy Co. is a fictional U.S. energy-sector cybersecurity company prote
 
 ## Skills Demonstrated
 
-Incident response lifecycle (NIST SP 800-61) | NIST CSF 2.0 | MITRE ATT&CK mapping | SIEM analysis (Wazuh) | Network IDS (Suricata) | Endpoint forensics and threat hunting (Velociraptor) | Evidence handling and chain of custody | Playbook authoring | Windows and Linux log analysis | Root cause analysis | Security governance and reporting (NERC CIP awareness)
+Incident response lifecycle | NIST CSF 2.0 | MITRE ATT&CK mapping | SIEM analysis (Wazuh) | Network IDS (Suricata) | Endpoint forensics and threat hunting (Velociraptor) | Evidence handling and chain of custody | Playbook authoring | Windows and Linux log analysis | Root cause analysis | Security governance and reporting (NERC CIP awareness)
 
 ## Author
 
-[Your Name] | [LinkedIn] | [Email]
+Yousif Alqunfuzi | [[LinkedIn]](https://www.linkedin.com/in/yousif-alqunfuzi/) | yousifalqunfuzi@gmail.com
 
 ## Disclaimer
 
 All systems, accounts, IP addresses, and the company "Example Energy Co." are **fictional or belong to an isolated academic lab**. No real organization or production data is involved. This repository is a portfolio piece, not a template to submit as coursework.
-
-## License
-
-Documentation released under [CC BY 4.0](LICENSE).
+This work is a group effort and not solely my work
