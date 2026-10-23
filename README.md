@@ -23,7 +23,6 @@ Example Energy Co. is a fictional U.S. energy-sector cybersecurity company prote
 | [`detection/iocs.md`](detection/iocs.md) | Indicators of compromise and behavioral indicators |
 | [`detection/detection-recommendations.md`](detection/detection-recommendations.md) | Detection and hardening improvements |
 | [`LAB-ENVIRONMENT.md`](LAB-ENVIRONMENT.md) | Hosts, tools, and data sources used |
-| [`assets/screenshots/`](assets/screenshots/) | Place for sanitized evidence screenshots |
 
 ## Key Findings (Incident 2: Web Defacement)
 
