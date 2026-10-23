@@ -12,7 +12,6 @@ All systems and data owned or operated by Example Energy: corporate IT, cloud, d
 | NIST CSF 2.0 | Overall structure (six Functions) |
 | NIST SP 800-61 | Incident handling practice |
 | NIST SP 800-53 | Preventive security controls |
-| NERC CIP | Energy-sector regulatory expectations (including CIP-015) |
 
 ## Key Definitions
 - **Cybersecurity Event:** a change that directly affects the operations or goals of an organization.
