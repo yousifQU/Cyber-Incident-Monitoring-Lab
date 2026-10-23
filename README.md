@@ -43,4 +43,4 @@ Yousif Alqunfuzi | [[LinkedIn]](https://www.linkedin.com/in/yousif-alqunfuzi/) |
 ## Disclaimer
 
 All systems, accounts, IP addresses, and the company "Example Energy Co." are **fictional or belong to an isolated academic lab**. No real organization or production data is involved. This repository is a portfolio piece, not a template to submit as coursework.
-This work is a group effort and not solely my work
+This work is a group effort and I am not the sole owner of the work
