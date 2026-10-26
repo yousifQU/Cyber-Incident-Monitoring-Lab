@@ -7,18 +7,18 @@
 
 ## Executive Summary
 
-**In short:** an attacker got into a fictional energy company's network using real employee and administrator passwords, opened hidden ways back in, probably copied data out, and replaced the homepage on two of the company's three websites. Our team traced every step of the attack minute by minute, found the root cause (passwords that were never changed), and produced a response plan, a reusable playbook, and 12 concrete fixes.
+**In short:** an attacker got into a fictional energy company's network using real employee and administrator passwords, created backdoors to be able to get back in, there is probability of data being copied  out, and replaced the homepage on two of the company's three websites. Our team traced every step of the attack minute by minute, found the root cause (passwords that were never changed), and produced a response plan, a reusable playbook, and 12 concrete fixes.
 
 ### The scenario
 "Example Energy Co." is a fictional U.S. energy company that runs power plants (nuclear, wind, coal, and natural gas). Because outages at an energy company can affect hospitals and the public, a cyberattack here is treated as high-stakes. Our team acted as the company's security team and did two things:
 
 1. **Wrote the rulebook:** a full Cyber Incident Response Plan explaining how the company should prepare for, detect, handle, and recover from attacks.
-2. **Investigated a real (simulated) attack:** inside an isolated lab network built to look like a company network, using professional security monitoring tools.
+2. **Investigated a real (simulated) attack:** inside an isolated virtualized network built through Nutanix to look like a company network, using professional security monitoring tools.
 
 ### What happened
 | When | What the attacker did (plain language) |
 |---|---|
-| **Day 1** | Scanned the network from outside to see which computers and services were available. Tried guessing passwords on a decoy server (a "honeypot" set up to catch intruders) and failed. Then logged into a real web server **on the first try** using an employee's actual password, and changed a setting so the all-powerful "root" account could log in remotely. |
+| **Day 1** | Scanned the network from outside to see which computers and services were available. Tried guessing passwords on a decoy server (a "honeypot" set up to catch intruders) and failed. Then logged into a real web server **on the first try** using an employee's actual password, and changed a setting so the  "root" account could log in remotely. |
 | **Day 8** | Came back. On the **Linux web server**: installed a personal access key (a backdoor that works even if passwords change), likely copied files out, deleted files, and replaced the website's homepage. On the **Windows side**: logged in with the company's top administrator account, created a fake user account and gave it extra permissions, jumped to a second web server, and replaced that website's homepage too. The whole Day 8 attack took about 15 minutes. |
 
 **End result:** two of the company's three public websites displayed the attacker's message instead of the real content, and company data was likely taken.
@@ -76,28 +76,8 @@ Our three tools recorded times in different time zones, which made rebuilding th
 
 ---
 
-## Technical Overview
 
-Example Energy Co. is a fictional U.S. energy-sector company protecting nuclear, wind, coal, and natural gas operations (IT and OT). This repository contains:
-
-1. **A complete CIRP** built on NIST CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover), with severity scoring, incident taxonomy, data classification, response workflow, evidence handling, recovery, eradication, and lessons learned.
-2. **Incident investigations** in a live lab environment: reconnaissance, insider-style credential abuse, SSH/RDP lateral movement, persistence, data exfiltration, and web defacement of both Apache (Linux) and IIS (Windows) servers.
-3. **A reusable web-defacement response playbook**, MITRE ATT&CK mappings, an IOC list, and detection recommendations derived from what the investigations found.
-
-## Repository Map
-
-| Path | Contents |
-|---|---|
-| [`docs/cirp/`](docs/cirp/) | The CIRP, broken into one file per CSF function and supporting tables |
-| [`incident-reports/incident-2-web-defacement.md`](incident-reports/incident-2-web-defacement.md) | Full investigation: scope, timeline, root cause, TTPs, CIA impact |
-| [`incident-reports/earlier-activity-evidence.md`](incident-reports/earlier-activity-evidence.md) | Evidence log from the earlier activity (Wazuh + Suricata) |
-| [`playbooks/web-defacement-playbook.md`](playbooks/web-defacement-playbook.md) | Step-by-step IR playbook (scope, analysis, TTPs, containment, summary) |
-| [`detection/mitre-attack-mapping.md`](detection/mitre-attack-mapping.md) | Technique-by-technique mapping with evidence sources |
-| [`detection/iocs.md`](detection/iocs.md) | Indicators of compromise and behavioral indicators |
-| [`detection/detection-recommendations.md`](detection/detection-recommendations.md) | Detection and hardening improvements |
-| [`LAB-ENVIRONMENT.md`](LAB-ENVIRONMENT.md) | Hosts, tools, and data sources used |
-
-## Key Findings (Incident 2: Web Defacement)
+## Key Findings (Incident: Web Defacement)
 
 - **Attack vector:** Insider threat. Credentials for `user-a` (Ubuntu) and `CORP\Administrator` (domain) were used without guessing or brute forcing.
 - **Root cause:** Poor credential hygiene. Passwords known to former or unauthorized insiders were never rotated.
