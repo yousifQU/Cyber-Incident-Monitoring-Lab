@@ -1,4 +1,4 @@
-# Incident 2: Web Defacement via Insider-Style Credential Abuse
+# Incident: Web Defacement via Insider-Style Credential Abuse
 
 **Context:** Academic lab exercise | **TLP:** CLEAR
 **Activity date:** Day 8 of the exercise (Velociraptor timestamps in UTC)
