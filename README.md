@@ -1,7 +1,6 @@
 # Example Energy IR: Incident Response Plan and Incident Investigations
 
-> Academic cybersecurity project, completed as group work.
-> A NIST CSF 2.0-aligned **Cyber Incident Response Plan (CIRP)** for a fictional critical-infrastructure energy provider, plus **hands-on incident investigations** performed in a simulated enterprise network using Wazuh, Suricata, and Velociraptor.
+> **Please read the DISCLAIMER** This work comes from team projects in a university course. I am not the sole author or owner of it, and this repository is a sanitized, re-written summary for educational and portfolio purposes.
 
 ---
 
